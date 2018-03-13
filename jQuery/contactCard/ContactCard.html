@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Card</title>
+    <link rel="stylesheet" href="ContactCard.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src= "ContactCard.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div id=topinfo>
+            <h1>Please Enter your Info Here</h1>
+        </div>
+        <br>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last Name: </label>
+                <input type="text" id="last_name" name="last_name" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea type="text" id="description" name="description" maxlength="40"></textarea>
+            </div>   
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <div id="contactcard">
+        </div>
+    </div>
+</body>
+</html>

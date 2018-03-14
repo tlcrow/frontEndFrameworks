@@ -1,0 +1,68 @@
+.wrapper{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    border-bottom: solid;
+    border-radius: 2px;
+    border-color: lightgray;
+}
+
+button{
+    border: none;
+    padding: 5px 40px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+#showP{
+    color: seagreen;
+    display: none;
+}
+
+#slideDownP{
+    color: lightsalmon;
+    display: none;
+}
+
+#fadeInP{
+    color: lightgreen;
+    display: none;
+}
+
+.blueText{
+    color: royalblue;
+}
+
+.blueButton{
+    background-color: royalblue;
+}
+
+#html{
+    border: none;
+    padding: 5px 40px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}

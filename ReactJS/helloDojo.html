@@ -8,7 +8,8 @@
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <!--Using text/babel-->
+    <!-- <div id="root"></div>
       <script type="text/babel">
           const element = (
             <div>
@@ -22,6 +23,31 @@
             </div>
           );
           ReactDOM.render(element, document.getElementById('root'));
-      </script>
+      </script> -->
+      <div id="heading"></div>
+      <div id="subheading"></div>
+      <div id="list"></div>
+        <script>
+          const Heading = (props) => {
+            return React.createElement('h1', null, "Hello Dojo!");
+          }
+          const Subheading = (props) => {
+            return React.createElement('h2', null, "Things I need to do:");
+          }
+          const List = (props) => {
+            const { text } = props;
+            return React.createElement('li', null, text);
+          }
+          const Items = (props) => {
+            return React.createElement('div', null,
+            React.createElement(List, { text: 'Learn React' } ),
+            React.createElement(List, { text: 'Go to The Kentucky Derby' } ),
+            React.createElement(List, { text: 'Take a tour of Southeast Asia' } )
+            )
+          }
+          ReactDOM.render(Heading(), document.getElementById('heading')),
+          ReactDOM.render(Subheading(), document.getElementById('subheading')),
+          ReactDOM.render(Items(), document.getElementById('list'))
+        </script>
   </body>
 </html>
